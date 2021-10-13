@@ -1,5 +1,5 @@
 // timer
-$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, H:mm:ss a"));
+$("#currentDay").text(moment().format("dddd, Do  MMMM YYYY, H:mm:ss"));
 
 const currentTime = moment().format("H");
 console.log(currentTime);
