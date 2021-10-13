@@ -1,9 +1,19 @@
-// on load declare hours for ls?
+window.onload = function () {
+  changeColour();
+  saveNine();
+  saveTen();
+  saveEleven();
+  saveTwelve();
+  saveThirteen();
+  saveFourteen();
+  saveFifteen();
+  saveSixteen();
+  saveSeventeen();
+};
 
-// timer
-$("#currentDay".text(moment().format("dddd, Do MMMM YYYY, H:mm:ss")));
+$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
-const currentTime = moment().format("H");
+var currentTime = moment().format("H");
 console.log(currentTime);
 
 function changeColour() {
@@ -80,5 +90,3 @@ function changeColour() {
     $("#17PM").addClass("future");
   }
 }
-
-// add
