@@ -1,5 +1,5 @@
-// Timer
-("#currentDay".text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+// timer
+"#currentDay".text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
 const currentTime = moment().format("H");
 console.log(currentTime);
