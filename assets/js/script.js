@@ -1,5 +1,4 @@
 // on load declare hours for ls?
-
 // timer
 $("#currentDay".text(moment().format("dddd, Do MMMM YYYY, H:mm:ss"));
 
