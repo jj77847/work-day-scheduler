@@ -99,7 +99,7 @@ function changeColour() {
     $("#17PM").addClass("future");
   }
 }
-//  The function below will save the input in local storage and keep it there even if the page is refreshed or closed and reopened
+// function below will save the input in local storage and keep it there even if the page is refreshed or closed and reopened
 // This function is run when the page opens to ensure that data loads as soon as the page is refreshed or opened.
 function saveNine() {
   // the below takes the ID for the input field and holds them in variables
