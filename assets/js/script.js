@@ -33,6 +33,8 @@ const onReady = function () {
 
 $(document).ready(onReady);
 
+const currentTime = moment().format("H");
+
 // the function below uses the variable above, along with if and else statements to change the colour of the time block for that day.
 // This is then repeated for each time of the day
 // The function below will change the colours of the hours of the day depending on the current time
