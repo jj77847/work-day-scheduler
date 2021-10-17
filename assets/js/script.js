@@ -20,8 +20,7 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
 // The function below will change the colours of the hours of the day depending on the current time
 // The below uses moment.js to record the current time in to a variable
-var currentTime = moment().format("H");
-console.log(currentTime);
+const currentTime = moment().format("H");
 
 // the function below uses the variable above, along with if and else statements to change the colour of the time block for that day.
 // This is then repeated for each time of the day
