@@ -16,7 +16,7 @@ window.onload = function () {
 // // Below will display the current date and day for the day you use the webpage
 // This uses moment.js to give the date, everything is the brackets can be amended to whatever date format you choose.
 
-$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+$("#currentDay").text(moment().format("dddd, Do MMMM, YYYY kk:mm:ss"));
 
 // The function below will change the colours of the hours of the day depending on the current time
 // The below uses moment.js to record the current time in to a variable
