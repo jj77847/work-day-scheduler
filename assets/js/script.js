@@ -15,15 +15,27 @@ window.onload = function () {
 
 // // Below will display the current date and day for the day you use the webpage
 // This uses moment.js to give the date, the brackets can be amended to whatever date format you choose.
-
-$("#currentDay").text(moment().format("dddd Do MMMM YYYY kk:mm:ss"));
-
-// The function below will change the colours of the hours of the day depending on the current time
 // The below uses moment.js to record the current time in to a variable
-const currentTime = moment().format("H");
+
+const clockContainer = $("#clock");
+
+const onReady = function () {
+  const timerTick = function () {
+    // Sunday, 17th October, 2021 13:27:25
+    const dateTime = moment();
+    const dateTimeFormatted = dateTime.format("dddd Do MMMM YYYY kk:mm:ss");
+
+    clockContainer.text(dateTimeFormatted);
+  };
+
+  const timer = setInterval(timerTick, 1000);
+};
+
+$(document).ready(onReady);
 
 // the function below uses the variable above, along with if and else statements to change the colour of the time block for that day.
 // This is then repeated for each time of the day
+// The function below will change the colours of the hours of the day depending on the current time
 function changeColour() {
   // 9 AM
   if (currentTime > 9) {
